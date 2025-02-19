@@ -1,0 +1,130 @@
+:root {
+  --color-text: #333;
+}
+
+.container {
+  max-width: 99rem;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 1.3rem 0 1.2rem 0;
+  padding: 0 0.5rem;
+}
+.header__wrrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.header__list {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  padding: 0;
+}
+.header__item-text {
+  color: var(--color-text);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.header__contact {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.header__phone-text {
+  margin: 0;
+}
+.header__phone-phone {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+.header__phone-phone::after {
+  content: url(../img/chevron_down.svg);
+}
+
+@media (max-width: 1280px) {
+  .header__wrrap {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+@media (max-width: 670px) {
+  .header__list {
+    display: none;
+  }
+  .header__contact {
+    gap: 1rem;
+  }
+  .header__logo {
+    width: 150px;
+  }
+}
+.section1 {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.section1__inner-text {
+  text-align: center;
+  margin: 0;
+  padding: 0px 0 2rem 0;
+}
+.section1__inner-text::after {
+  content: url(../img/Arrow.svg);
+  cursor: pointer;
+  position: absolute;
+}
+.section1__wrrap {
+  background-color: #3F00FF;
+  border-radius: 40px;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+.section1__content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.section1__content-text {
+  margin: 0 15px;
+}
+.section1__content-text-p {
+  margin: 0;
+}
+.section1__content-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 58rem;
+  margin-top: 15rem;
+}
+.section1__content-text-title {
+  font-size: 5.6rem;
+  line-height: 110%;
+  letter-spacing: 0px;
+  margin: 0;
+  font-weight: 800;
+}
+.section1__content-text-par {
+  line-height: 150%;
+  margin-bottom: 1.2rem;
+}
+.section1__content-text-link {
+  background: linear-gradient(#FFDF00, #FFB800);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 64px;
+  width: 10rem;
+  color: #000;
+}
+.section1__content-decore {
+  display: flex;
+  gap: 1rem;
+  margin: 6rem 0 6rem 0;
+}
+.section1__content-img {
+  position: absolute;
+  right: -7rem;
+}/*# sourceMappingURL=style.css.map */
